@@ -40,6 +40,26 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s1[i] == s2; i++)
 		if (s1[i] == '\0')
 			return (0);
+	return (s1[i] - s2[i]);
+}
+/**
+ * _strcpy - copy string
+ * @dest: address pointed to
+ * @src: string being pointer to
+ * Return: dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int k = 0;
+
+	while (src[k] != '\0')
+	{
+		dest[k] = src[k];
+		++k;
+	}
+	dest[k] = '\0';
+	++k;
+	return (dest);
 }
 /**
  * _strlen - function to return length of a string
@@ -74,5 +94,4 @@ size_t _strncmp(char *s1, char *s2, size_t n)
 			return (i);
 		}
 	}
-	return (0);
 }

@@ -23,7 +23,7 @@ int _frk_func(char **arg, char **av, char **env, char *lineprt, int np, int c)
 
 	if (child == 0)
 	{
-		if (execve(arg[0], arg. env) == -1)
+		if (execve(arg[0], arg, env) == -1)
 			fprintf(stderr, format, av[0], np, arg[0]);
 			if (!c)
 				free(arg[0]);
@@ -35,7 +35,7 @@ int _frk_func(char **arg, char **av, char **env, char *lineprt, int np, int c)
 	else
 	{
 		wait(%status);
-		if (WIFEXITED(status) && WEXITATUS(status) != 0)
+		if (WIFEXITED(status) && WEXITSTATUS(status) != 0)
 			return (WEXITSTATUS(status));
 	}
 	return (0);
