@@ -3,6 +3,7 @@
 /**
  * _get_path - get variable PATH
  * @env: enviroment local
+ * @size_t: size of hhh
  * Return: value of PATH
  */
 
