@@ -10,7 +10,7 @@
 
 int main(int ac, char **av, char **env)
 	char *getcommand = NULL, **user_command = NULL;
-	int pathValue = 0, _exit 0, n = 0;
+	int pathValue = 0, _exit = 0, n = 0;
 	(void)ac;
 
 	while (1)

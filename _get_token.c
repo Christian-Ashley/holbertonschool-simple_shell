@@ -16,7 +16,7 @@ char **_get_token(char *lineptr)
 		return (NULL);
 	for (i = 0; lineptr[i]; i++)
 	{
-		if (linptr[i] == ' ')
+		if (lineptr[i] == ' ')
 			size++;
 	}
 	if ((size + 1) == _strlen(lineptr))
